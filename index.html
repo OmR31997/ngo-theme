@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compare Amaan Ansari Welfare Foundation website themes and choose a direction.">
+  <title>Amaan Ansari Foundation | Theme Studio</title>
+  <style>
+    :root {
+      --ink: #17352f;
+      --muted: #64736d;
+      --paper: #f7faf6;
+      --surface: #fff;
+      --line: #dce8df;
+      --green: #0a7650;
+      --deep: #064b36;
+      --shadow: 0 18px 50px rgba(27, 62, 46, .10);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: linear-gradient(135deg, #dcece3, #eef5f0 45%, #e6eef7);
+      font: 15px/1.6 Arial, sans-serif;
+    }
+    a { color: inherit; text-decoration: none; }
+    .page { width: min(100% - 32px, 1240px); margin: 0 auto; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 36px;
+      align-items: end;
+      padding: 72px 0 48px;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      width: 28px;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--green);
+      content: "";
+    }
+    h1, h2, p { margin-top: 0; }
+    h1 {
+      max-width: 700px;
+      margin-bottom: 18px;
+      color: var(--deep);
+      font: 700 clamp(42px, 7vw, 82px)/.98 Georgia, serif;
+      letter-spacing: -.055em;
+    }
+    .hero-copy p { max-width: 580px; color: var(--muted); font-size: 18px; }
+    .hero-note {
+      padding: 24px;
+      border: 1px solid #fff;
+      border-radius: 24px;
+      background: rgba(255,255,255,.62);
+      box-shadow: var(--shadow);
+    }
+    .hero-note strong { display: block; margin-bottom: 7px; color: var(--deep); font-size: 20px; }
+    .hero-note p { margin-bottom: 0; color: var(--muted); font-size: 13px; }
+    .themes {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      padding-bottom: 72px;
+    }
+    .theme-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .theme-card:hover { transform: translateY(-5px); box-shadow: 0 24px 60px rgba(27, 62, 46, .16); }
+    .preview {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #e8f2ec;
+    }
+    .preview img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: top; }
+    .preview::after {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 55%, rgba(3, 42, 30, .34));
+      content: "";
+      pointer-events: none;
+    }
+    .number {
+      position: absolute;
+      z-index: 1;
+      top: 16px;
+      left: 16px;
+      display: grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.7);
+      border-radius: 50%;
+      color: #fff;
+      background: rgba(6, 75, 54, .82);
+      font-weight: 700;
+    }
+    .theme-content { padding: 24px; }
+    .theme-content h2 { margin-bottom: 6px; color: var(--deep); font: 700 27px/1.1 Georgia, serif; }
+    .theme-content p { min-height: 48px; margin-bottom: 20px; color: var(--muted); font-size: 13px; }
+    .theme-meta { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 22px; }
+    .tag {
+      padding: 5px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      background: var(--paper);
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .actions { display: flex; align-items: center; gap: 14px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 17px;
+      border-radius: 999px;
+      color: #fff;
+      background: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .button:hover { background: var(--deep); }
+    .source-link { color: var(--green); font-size: 12px; font-weight: 700; }
+    footer {
+      padding: 24px 0 36px;
+      border-top: 1px solid rgba(23, 53, 47, .12);
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+    @media (max-width: 760px) {
+      .hero { display: block; padding: 48px 0 32px; }
+      .hero-note { margin-top: 28px; }
+      .themes { grid-template-columns: 1fr; padding-bottom: 48px; }
+    }
+    @media (max-width: 420px) {
+      .page { width: min(100% - 22px, 1240px); }
+      h1 { font-size: 48px; }
+      .theme-content { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Amaan Ansari Foundation</span>
+        <h1>Choose the feeling of your new home.</h1>
+        <p>Explore the complete website directions below. Open any theme to view the full experience, then choose the visual language that best represents the foundation.</p>
+      </div>
+      <aside class="hero-note">
+        <strong>Four directions. One mission.</strong>
+        <p>Each option includes the core foundation story, programs, impact, support, bilingual content, and responsive layouts.</p>
+      </aside>
+    </header>
+
+    <section class="themes" aria-label="Website theme options">
+      <article class="theme-card">
+        <div class="preview">
+          <img src="SampleSiteDesign/theme-01.png" alt="Preview of Theme 01 Classic Green and Blue" loading="lazy">
+          <span class="number">01</span>
+        </div>
+        <div class="theme-content">
+          <h2>Classic Green &amp; Blue</h2>
+          <p>A warm, expressive foundation homepage with strong storytelling, colorful program cards, and a prominent mission-led hero.</p>
+          <div class="theme-meta"><span class="tag">Story-first</span><span class="tag">Full homepage</span><span class="tag">Warm</span></div>
+          <div class="actions"><a class="button" href="Sample0.html">Open theme</a><a class="source-link" href="Sample0.html">View full page →</a></div>
+        </div>
+      </article>
+
+      <article class="theme-card">
+        <div class="preview">
+          <img src="SampleSiteDesign/theme-02.png" alt="Preview of Theme 02 Editorial Sage" loading="lazy">
+          <span class="number">02</span>
+        </div>
+        <div class="theme-content">
+          <h2>Editorial Sage</h2>
+          <p>A calm, premium layout that puts people and photography first, with generous spacing and a confident visual rhythm.</p>
+          <div class="theme-meta"><span class="tag">Premium</span><span class="tag">Photo-led</span><span class="tag">Calm</span></div>
+          <div class="actions"><a class="button" href="Sample8.html">Open theme</a><a class="source-link" href="Sample8.html">View full page →</a></div>
+        </div>
+      </article>
+
+      <article class="theme-card">
+        <div class="preview">
+          <img src="SampleSiteDesign/theme-03.png" alt="Preview of Theme 03 Compact Trust" loading="lazy">
+          <span class="number">03</span>
+        </div>
+        <div class="theme-content">
+          <h2>Compact Trust</h2>
+          <p>A clear, efficient direction for visitors who need to understand the mission, impact, and ways to help at a glance.</p>
+          <div class="theme-meta"><span class="tag">Clear</span><span class="tag">Compact</span><span class="tag">Action-led</span></div>
+          <div class="actions"><a class="button" href="SampleA.html">Open theme</a><a class="source-link" href="SampleA.html">View full page →</a></div>
+        </div>
+      </article>
+
+      <article class="theme-card">
+        <div class="preview">
+          <img src="SampleSiteDesign/theme-04.png" alt="Preview of Theme 04 Fresh Community" loading="lazy">
+          <span class="number">04</span>
+        </div>
+        <div class="theme-content">
+          <h2>Fresh Community</h2>
+          <p>A friendly, modern presentation with an approachable tone, compact navigation, and quick paths to participate.</p>
+          <div class="theme-meta"><span class="tag">Friendly</span><span class="tag">Modern</span><span class="tag">Accessible</span></div>
+          <div class="actions"><a class="button" href="SampleB.html">Open theme</a><a class="source-link" href="SampleB.html">View full page →</a></div>
+        </div>
+      </article>
+    </section>
+
+    <footer>Theme Studio · Amaan Ansari Welfare Foundation</footer>
+  </main>
+</body>
+</html>

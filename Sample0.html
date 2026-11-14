@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Amaan Ansari Welfare Foundation — health, education and social welfare for a better tomorrow.">
+  <title>Amaan Ansari Welfare Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Tiro+Devanagari+Hindi&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    :root{--green:#006b4f;--dark:#004735;--blue:#0a4b9b;--ink:#152b2a;--muted:#60716d;--line:#dce9e5;--paper:#f8fcfb;--cream:#eff8f2;--shadow:0 12px 30px #144d3b12}
+    html[lang=hi] body{font-family:Hind,"DM Sans",sans-serif}html[lang=hi] .title h1,html[lang=hi] h2{font-family:"Tiro Devanagari Hindi",serif;font-weight:400}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;overflow-x:hidden;color:var(--ink);background:#d9ebe4;font:15px/1.55 "DM Sans",sans-serif}img{max-width:100%}a{color:inherit;text-decoration:none}.shell{max-width:1440px;margin:auto;background:var(--paper);overflow:hidden}.wrap{width:min(100% - 48px,1240px);margin:auto}
+    .utility{padding:9px 0;color:#fff;background:linear-gradient(90deg,var(--dark),#075d7b);font-size:12px}.utility .wrap,.utility-left,.social,.language-switcher{display:flex;align-items:center;gap:22px}.utility .wrap{justify-content:space-between;min-width:0}.utility-left{min-width:0;flex:1}.utility-left span{display:flex;align-items:center;gap:7px;min-width:0}.utility-left span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.social{gap:9px;flex-shrink:0}.social a{display:grid;width:25px;height:25px;place-items:center;border-radius:50%;background:#fff2;color:#fff}.language-switcher{gap:3px;padding:3px;border:1px solid #ffffff80;border-radius:20px}.language-switcher button{border:0;border-radius:15px;padding:4px 8px;background:transparent;color:#fff;cursor:pointer;font:600 11px "DM Sans",sans-serif}.language-switcher button.active{background:#fff;color:var(--dark)}.utility .donate{display:inline-flex;width:auto;height:auto;align-items:center;gap:7px;flex-shrink:0;white-space:nowrap;padding:5px 16px;border:1px solid #fff;border-radius:22px;background:#ffffff1a;font-weight:700}
+    .masthead{display:grid;grid-template-columns:190px 1fr 190px;align-items:center;gap:20px;padding:12px 0}.logo{width:175px;height:130px;object-fit:contain}.title{text-align:center}.title h1{margin:0;color:var(--dark);font:700 clamp(28px,4.6vw,63px)/.95 "Playfair Display",serif;letter-spacing:-.04em}.title h1 span{display:block;color:var(--blue);font:700 .62em/.95 "DM Sans",sans-serif;letter-spacing:.03em}.title p{margin:10px 0 0;color:var(--dark);font-weight:600}.mission{display:flex;align-items:center;justify-content:center;gap:10px;color:var(--blue);font-weight:700;text-transform:uppercase}.mission::before,.mission::after{content:"";height:1px;flex:1;background:var(--line)}.side-mission{flex-direction:column;align-items:flex-start;gap:0;line-height:1.55}.side-mission::before,.side-mission::after{display:none}
+    nav{background:linear-gradient(90deg,var(--green),var(--blue));color:#fff}.nav-inner{display:flex;align-items:center;justify-content:center;gap:8px}.nav-inner a{display:inline-flex;align-items:center;gap:7px;padding:15px 14px;font-weight:600;font-size:13px;border-radius:0 0 10px 10px;transition:.2s}.nav-inner a i{font-size:13px}.nav-inner a:hover,.nav-inner a.active{background:#ffffff24}.hero{position:relative;min-height:450px;overflow:hidden;background:#dceee5}.hero-slides,.hero-slide{position:absolute;inset:0}.hero-slide{opacity:0;background-position:center;background-size:cover;filter:saturate(1.08) contrast(1.06);transition:opacity .7s ease}.hero-slide.active{opacity:1}.hero-slide::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(248,252,251,.9) 0%,rgba(248,252,251,.72) 34%,rgba(248,252,251,.25) 58%,rgba(248,252,251,.04) 100%)}.hero-content{position:relative;z-index:1;max-width:520px;padding:72px 0}.hero-controls{position:absolute;z-index:2;right:28px;bottom:25px;display:flex;align-items:center;gap:10px}.hero-control,.hero-dot{border:0;cursor:pointer}.hero-control{width:34px;height:34px;border-radius:50%;background:#ffffffd9;color:var(--dark);font-size:18px}.hero-dot{width:9px;height:9px;padding:0;border-radius:50%;background:#ffffffa8}.hero-dot.active{width:25px;border-radius:8px;background:#fff}.kicker{display:inline-block;color:var(--green);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.hero h2{margin:12px 0;color:var(--dark);font:700 clamp(37px,5vw,66px)/1.02 "Playfair Display",serif;letter-spacing:-.04em}.hero h2 span{color:var(--blue)}.hero p{max-width:410px;margin:0;color:#344b47;font-size:17px}.actions{display:flex;gap:12px;margin-top:27px}.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 21px;border-radius:26px;background:var(--green);color:#fff;font-weight:700;box-shadow:0 7px 15px #006b4f25}.btn.alt{border:1px solid var(--blue);background:#fff;color:var(--blue);box-shadow:none}
+    section{padding:52px 0}.section-title{text-align:center;margin-bottom:25px}.section-title h2{margin:5px 0;color:var(--dark);font:700 clamp(28px,4vw,43px)/1.1 "Playfair Display",serif}.section-title p{max-width:600px;margin:auto;color:var(--muted)}.programs{background:linear-gradient(180deg,var(--cream),#fff)}.program-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.program{overflow:hidden;min-height:295px;padding:20px 15px 16px;border:1px solid #fff;border-radius:18px;text-align:center;box-shadow:var(--shadow)}.program:nth-child(1){background:#eafff2}.program:nth-child(2){background:#edf6ff}.program:nth-child(3){background:#fff0f0}.program:nth-child(4){background:#effff4}.program:nth-child(5){background:#f5efff}.program .icon{height:92px;font-size:62px;line-height:1}.program h3{margin:12px 0 6px;color:var(--blue);font-size:17px}.program p{margin:0;color:#42534f;font-size:12px;line-height:1.45}.round{display:grid;width:31px;height:31px;place-items:center;margin:14px auto 0;border-radius:50%;background:var(--green);color:#fff;font-weight:700}.program:nth-child(2) .round{background:var(--blue)}.program:nth-child(3) .round{background:#d71728}.program:nth-child(5) .round{background:#7137b8}
+    .about-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:36px;align-items:center}.about-photo{height:330px;overflow:hidden;border-radius:22px;box-shadow:var(--shadow)}.about-photo img{width:100%;height:100%;object-fit:cover}.about h2{margin:5px 0 13px;color:var(--blue);font:700 39px/1.08 "Playfair Display",serif}.about p{color:var(--muted)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0;color:#3e5751;font-size:13px}.checks span::before{content:"✓";display:inline-grid;width:21px;height:21px;place-items:center;margin-right:7px;border-radius:50%;background:var(--green);color:#fff;font-size:11px}
+    .stats{padding:25px 0;background:linear-gradient(90deg,var(--dark),var(--blue));color:#fff}.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.stat{text-align:center;border-right:1px solid #ffffff3d}.stat:last-child{border:0}.stat b{display:block;font:700 32px "Playfair Display",serif}.stat span{font-size:12px}
+    .support{background:#f5fbff}.support-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:15px}.support-card{padding:25px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:var(--shadow)}.support-card h3{margin:0 0 9px;color:var(--blue);font-size:21px}.support-card p{color:var(--muted);font-size:13px}.support-card img{width:100%;height:130px;object-fit:contain;margin-bottom:9px}.qr img{height:170px}.support-card .btn{font-size:13px}
+    footer{padding:42px 0 18px;background:linear-gradient(110deg,#004735,#002c4e);color:#fff}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1.4fr 1fr;gap:30px}.footer-brand-panel{width:fit-content;padding:12px 15px;border:1px solid #ffffff2b;border-radius:16px;background:linear-gradient(135deg,#ffffff18,#ffffff08)}.footer-logo{display:flex;align-items:center;gap:10px}.footer-logo img{width:65px;height:65px;padding:7px;object-fit:contain;border-radius:50%;background:#fff;box-shadow:0 8px 20px #00000026}.footer-logo strong{font:700 20px "Playfair Display",serif}.footer-grid h3{margin:0 0 14px;color:#c3f1d7;font-size:13px;text-transform:uppercase;letter-spacing:.1em}.footer-grid a,.footer-grid p{display:block;margin:7px 0;color:#dcece8;font-size:12px}.copyright{display:flex;justify-content:space-between;gap:20px;margin-top:30px;padding-top:15px;border-top:1px solid #ffffff2d;color:#c9dbd8;font-size:11px}
+    @media(max-width:1100px){.nav-inner{justify-content:flex-start;overflow-x:auto;scrollbar-width:none}.nav-inner::-webkit-scrollbar{display:none}.nav-inner a{white-space:nowrap}}
+    @media(max-width:900px){.masthead{grid-template-columns:120px 1fr}.masthead>.mission{display:none}.logo{width:120px;height:100px}}
+    @media(max-width:850px){.utility .wrap{justify-content:flex-end}.utility-left{display:none}.masthead{grid-template-columns:100px 1fr}.logo{width:100px;height:90px}.mission{display:none}.program-grid,.support-grid{display:flex;grid-template-columns:none;gap:12px;overflow-x:auto;padding:3px 2px 14px;scroll-snap-type:x mandatory;scrollbar-width:thin}.program,.support-card{flex:0 0 min(320px,42vw);scroll-snap-align:start}.about-grid{grid-template-columns:1fr}.about-photo{height:260px}.stats-grid{grid-template-columns:repeat(3,1fr);row-gap:20px}.stat:nth-child(3){border:0}.footer-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:560px){.wrap{width:min(100% - 28px,420px)}section{padding:38px 0}.utility-left span:nth-child(2){display:none}.utility .wrap{gap:8px}.social{gap:5px}.social .donate{padding:5px 9px}.masthead{display:block;text-align:center}.logo{width:105px;height:80px}.title h1{font-size:34px}.title p{margin:6px 0}.hero{min-height:560px}.hero-slide::after{background:linear-gradient(0deg,#fff 8%,#ffffffbc 65%,#ffffff00)}.hero-content{padding:245px 0 30px}.hero h2{font-size:43px}.hero p{font-size:15px}.actions{flex-wrap:wrap;margin-top:20px}.actions .btn{padding:10px 15px;font-size:13px}.hero-controls{right:14px;bottom:18px}.program-grid,.support-grid{display:flex;grid-template-columns:none;gap:12px;overflow-x:auto;padding:3px 2px 14px;scroll-snap-type:x mandatory;scrollbar-width:thin}.program,.support-card{flex:0 0 84%;scroll-snap-align:start}.program-grid::after,.support-grid::after{content:"";flex:0 0 1px}.program-grid{scroll-padding-inline:2px}.support-grid{scroll-padding-inline:2px}.footer-grid{grid-template-columns:1fr}.stats-grid{grid-template-columns:1fr 1fr}.stat{border:0}.checks{grid-template-columns:1fr}.copyright{display:block}.copyright span{display:block;margin-top:6px}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <div class="utility"><div class="wrap"><div class="utility-left"><span>✉ info@amaanansarifoundation.org</span><span>⌖ <span data-i="location">Bilaspur, Chhattisgarh</span></span></div><div class="social"><a href="#" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a><a href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a><a href="#" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a><a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a><div class="language-switcher" role="group" aria-label="Language"><button type="button" data-lang="en" class="active">EN</button><button type="button" data-lang="hi">हिं</button></div><a class="donate" href="#support"><i class="bi bi-heart-fill" aria-hidden="true"></i><span data-i="donate">Donate Now</span></a></div></div></div>
+    <header class="masthead wrap">
+      <img class="logo" src="public/logo.png" alt="Amaan Ansari Welfare Foundation logo">
+      <div class="title"><h1><span data-i="brand">AMAAN ANSARI</span> <span data-i="foundation">WELFARE FOUNDATION</span></h1><p data-i="motto">खिदमत-ए-खलक</p><div class="mission" data-i="mission">Health · Education · Social Welfare</div></div>
+      <div class="mission side-mission"><span data-i="service">Service</span><span data-i="support">Support</span><span data-i="empowerment">Empowerment</span></div>
+    </header>
+    <nav><div class="nav-inner wrap"><a class="active" href="#home"><i class="bi bi-house-door-fill" aria-hidden="true"></i><span data-i="home">Home</span></a><a href="#about"><i class="bi bi-person-lines-fill" aria-hidden="true"></i><span data-i="about">About Us</span></a><a href="#programs"><i class="bi bi-heart-pulse-fill" aria-hidden="true"></i><span data-i="work">What We Do</span></a><a href="#support"><i class="bi bi-boxes" aria-hidden="true"></i><span data-i="team">Team</span></a><a href="#about"><i class="bi bi-file-image" aria-hidden="true"></i><span data-i="gallery">Gallery</span></a><a href="#contact"><i class="bi bi-telephone-outbound-fill" aria-hidden="true"></i><span data-i="contact">Contact Us</span></a></div></nav>
+    <section id="home" class="hero" aria-label="Foundation highlights">
+      <div class="hero-slides">
+        <div class="hero-slide active" style="background-image:url('public/hero-images/hero1.png')" role="img" aria-label="A child smiling outdoors"></div>
+        <div class="hero-slide" style="background-image:url('public/hero-images/hero4.png')" role="img" aria-label="Children learning together"></div>
+        <div class="hero-slide" style="background-image:url('public/hero-images/hero5.png')" role="img" aria-label="Community members sharing a meal"></div>
+        <div class="hero-slide" style="background-image:url('public/hero-images/hero6.png')" role="img" aria-label="Volunteers supporting a family"></div>
+      </div>
+      <div class="wrap"><div class="hero-content"><span class="kicker" data-i="heroKicker">Together for a better tomorrow</span><h2><span data-i="heroTitle">A healthier society and a</span> <span data-i="heroTitleAccent">brighter tomorrow.</span></h2><p data-i="heroText">Together for health, education and a better society.</p><div class="actions"><a class="btn" href="#support">♥ <span data-i="supportCause">Support Our Cause</span> →</a><a class="btn alt" href="#about"><span data-i="knowMore">Know More</span> →</a></div></div></div>
+      <div class="hero-controls" aria-label="Hero slideshow controls"><button class="hero-control" type="button" data-direction="-1" aria-label="Previous slide">‹</button><button class="hero-dot active" type="button" aria-label="Show slide 1"></button><button class="hero-dot" type="button" aria-label="Show slide 2"></button><button class="hero-dot" type="button" aria-label="Show slide 3"></button><button class="hero-dot" type="button" aria-label="Show slide 4"></button><button class="hero-control" type="button" data-direction="1" aria-label="Next slide">›</button></div>
+    </section>
+    <section id="programs" class="programs"><div class="wrap"><div class="section-title"><span class="kicker" data-i="workKicker">What we do</span><h2 data-i="workTitle">Small support. Big change.</h2><p data-i="workText">Every contribution helps us build healthier, educated and empowered communities.</p></div><div class="program-grid">
+      <article class="program"><div class="icon">🩺</div><h3 data-i="health">Health Support</h3><p data-i="healthText">Medical help, treatment assistance and awareness.</p><div class="round">→</div></article>
+      <article class="program"><div class="icon">📚</div><h3 data-i="education">Education Support</h3><p data-i="educationText">Support for underprivileged children's education and coaching.</p><div class="round">→</div></article>
+      <article class="program"><div class="icon">🩸</div><h3 data-i="blood">Blood Donation</h3><p data-i="bloodText">Building a network for blood donors and emergency help.</p><div class="round">→</div></article>
+      <article class="program"><div class="icon">🌱</div><h3 data-i="welfare">Social Welfare</h3><p data-i="welfareText">Support for needy individuals and community development.</p><div class="round">→</div></article>
+      <article class="program"><div class="icon">🤝</div><h3 data-i="help">Help in Need</h3><p data-i="helpText">Standing together in times of crisis and emergencies.</p><div class="round">→</div></article>
+    </div></div></section>
+    <section id="about" class="about"><div class="wrap about-grid"><div class="about-photo"><img src="public/whatwedo.png" alt="Amaan Ansari Foundation community work"></div><div><span class="kicker" data-i="aboutKicker">Who we are</span><h2 data-i="aboutTitle">About AAWF</h2><p data-i="aboutText">Amaan Ansari Welfare Foundation (AAWF) is a non-profit organization committed to health, education and social welfare. We strive to support the needy, create awareness and build a healthier, educated and empowered society.</p><div class="checks"><span data-i="check1">People-first programs</span><span data-i="check2">Open and accountable</span><span data-i="check3">Local partnerships</span><span data-i="check4">Long-term thinking</span></div><a class="btn" href="#contact"><span data-i="readMore">Read More</span> →</a></div></div></section>
+    <section class="stats"><div class="wrap stats-grid"><div class="stat"><b>2021</b><span data-i="stat1">Year of Establishment</span></div><div class="stat"><b>1000+</b><span data-i="stat2">People Supported</span></div><div class="stat"><b>100+</b><span data-i="stat3">Blood Donors Network</span></div><div class="stat"><b>500+</b><span data-i="stat4">Education Support</span></div><div class="stat"><b>100+</b><span data-i="stat5">Active Members</span></div></div></section>
+    <section id="support" class="support"><div class="wrap"><div class="section-title"><span class="kicker" data-i="joinKicker">Join the movement</span><h2 data-i="joinTitle">There are many ways to help.</h2></div><div class="support-grid"><article class="support-card"><h3 data-i="membership">Membership Plan</h3><p data-i="membershipText">Be a part of our mission and support society with a yearly or lifetime membership.</p><a class="btn" href="mailto:info@amaanansarifoundation.org"><span data-i="joinNow">Join Now</span> →</a></article><article class="support-card"><h3 data-i="online">Online Support</h3><p data-i="onlineText">Your contribution can change someone's life and create a ripple of hope.</p><a class="btn" href="#contact"><span data-i="donateNow">Donate Now</span> →</a></article><article class="support-card qr"><h3 data-i="upi">Support via UPI</h3><img src="public/qr.png" alt="Scan QR code to support AAWF"><p data-i="upiText">Scan the QR code to support Amaan Ansari Welfare Foundation.</p></article></div></div></section>
+    <footer id="contact"><div class="wrap"><div class="footer-grid"><div><div class="footer-brand-panel"><div class="footer-logo"><img src="public/logo.png" alt=""><strong>Amaan Ansari<br>Welfare Foundation</strong></div><p data-i="footerText">A committed organization for health, education and social welfare.</p></div></div><div><h3 data-i="quickLinks">Quick Links</h3><a href="#home" data-i="home">Home</a><a href="#about" data-i="about">About Us</a><a href="#programs" data-i="work">What We Do</a><a href="#support" data-i="donateNow">Donate Now</a></div><div><h3 data-i="contactTitle">Contact Us</h3><a href="#">⌖ <span data-i="location">Bilaspur, Chhattisgarh</span></a><a href="tel:+919999999999">☎ +91 9999999999</a><a href="mailto:info@amaanansarifoundation.org">✉ info@amaanansarifoundation.org</a><a href="#">◉ www.amaanansarifoundation.org</a></div><div><h3 data-i="follow">Follow Us</h3><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">WhatsApp</a></div></div><div class="copyright"><span data-i="copyright">© 2026 Amaan Ansari Welfare Foundation (AAWF)</span><span><span data-i="privacy">Privacy Policy</span> &nbsp; | &nbsp; <span data-i="terms">Terms & Conditions</span> &nbsp; | &nbsp; <span data-i="disclaimer">Disclaimer</span></span></div></div></footer>
+  </main>
+  <script>
+    const hindi = {
+      location: "बिलासपुर, छत्तीसगढ़",
+      donate: "दान करें",
+      brand: "अमान अंसारी",
+      foundation: "वेलफेयर फाउंडेशन",
+      motto: "खिदमत-ए-खलक",
+      mission: "स्वास्थ्य · शिक्षा · सामाजिक कल्याण",
+      service: "सेवा",
+      support: "सहायता",
+      empowerment: "सशक्तिकरण",
+      home: "मुख्य पृष्ठ",
+      about: "हमारे बारे में",
+      work: "हमारा कार्य",
+      team: "टीम",
+      gallery: "गैलरी",
+      contact: "संपर्क करें",
+      heroKicker: "बेहतर कल के लिए साथ मिलकर",
+      heroTitle: "एक स्वस्थ समाज और",
+      heroTitleAccent: "उज्ज्वल कल।",
+      heroText: "स्वास्थ्य, शिक्षा और बेहतर समाज के लिए साथ मिलकर।",
+      supportCause: "हमारे प्रयास का समर्थन करें",
+      knowMore: "और जानें",
+      workKicker: "हमारा कार्य",
+      workTitle: "छोटी मदद। बड़ा बदलाव।",
+      workText: "हर योगदान से स्वस्थ, शिक्षित और सशक्त समुदाय बनाने में मदद मिलती है।",
+      health: "स्वास्थ्य सहायता",
+      healthText: "चिकित्सा सहायता, उपचार सहयोग और जागरूकता।",
+      education: "शिक्षा सहायता",
+      educationText: "वंचित बच्चों की शिक्षा और कोचिंग के लिए सहायता।",
+      blood: "रक्तदान",
+      bloodText: "रक्तदाताओं और आपातकालीन सहायता का नेटवर्क।",
+      welfare: "सामाजिक कल्याण",
+      welfareText: "ज़रूरतमंद लोगों और सामुदायिक विकास के लिए सहायता।",
+      help: "ज़रूरत में मदद",
+      helpText: "संकट और आपात स्थिति में साथ खड़े रहना।",
+      aboutKicker: "हम कौन हैं",
+      aboutTitle: "AAWF के बारे में",
+      aboutText: "अमान अंसारी वेलफेयर फाउंडेशन (AAWF) स्वास्थ्य, शिक्षा और सामाजिक कल्याण के लिए समर्पित एक गैर-लाभकारी संस्था है। हम ज़रूरतमंदों की सहायता, जागरूकता और एक स्वस्थ, शिक्षित व सशक्त समाज के निर्माण का प्रयास करते हैं।",
+      check1: "लोगों को प्राथमिकता देने वाले कार्यक्रम",
+      check2: "पारदर्शी और जवाबदेह",
+      check3: "स्थानीय साझेदारियाँ",
+      check4: "दीर्घकालिक सोच",
+      readMore: "और पढ़ें",
+      stat1: "स्थापना वर्ष",
+      stat2: "लाभार्थी लोग",
+      stat3: "रक्तदाता नेटवर्क",
+      stat4: "शिक्षा सहायता",
+      stat5: "सक्रिय सदस्य",
+      joinKicker: "अभियान से जुड़ें",
+      joinTitle: "मदद करने के कई तरीके हैं।",
+      membership: "सदस्यता योजना",
+      membershipText: "हमारे मिशन का हिस्सा बनें और वार्षिक या आजीवन सदस्यता के साथ समाज का समर्थन करें।",
+      joinNow: "अभी जुड़ें",
+      online: "ऑनलाइन सहायता",
+      onlineText: "आपका योगदान किसी का जीवन बदल सकता है और आशा की लहर पैदा कर सकता है।",
+      donateNow: "अभी दान करें",
+      upi: "UPI से सहायता",
+      upiText: "AAWF का समर्थन करने के लिए QR कोड स्कैन करें।",
+      footerText: "स्वास्थ्य, शिक्षा और सामाजिक कल्याण के लिए समर्पित संस्था।",
+      quickLinks: "त्वरित लिंक",
+      contactTitle: "संपर्क करें",
+      follow: "हमें फ़ॉलो करें",
+      copyright: "© 2026 अमान अंसारी वेलफेयर फाउंडेशन (AAWF)",
+      privacy: "गोपनीयता नीति",
+      terms: "नियम व शर्तें",
+      disclaimer: "अस्वीकरण"
+    };
+    const languageElements = [...document.querySelectorAll("[data-i]")];
+    const english = {};
+    languageElements.forEach((element) => {
+      if (!(element.dataset.i in english)) english[element.dataset.i] = element.textContent;
+    });
+    function setLanguage(language) {
+      document.documentElement.lang = language;
+      const translations = language === "hi" ? hindi : english;
+      languageElements.forEach((element) => {
+        element.textContent = translations[element.dataset.i] || english[element.dataset.i];
+      });
+      document.querySelectorAll("[data-lang]").forEach((button) => {
+        button.classList.toggle("active", button.dataset.lang === language);
+      });
+      try { localStorage.setItem("aawf-language", language); } catch (error) {}
+    }
+    document.querySelectorAll("[data-lang]").forEach((button) => {
+      button.addEventListener("click", () => setLanguage(button.dataset.lang));
+    });
+    let savedLanguage = "en";
+    try { savedLanguage = localStorage.getItem("aawf-language") || "en"; } catch (error) {}
+    setLanguage(savedLanguage === "hi" ? "hi" : "en");
+
+    const slides = [...document.querySelectorAll(".hero-slide")];
+    const dots = [...document.querySelectorAll(".hero-dot")];
+    let activeSlide = 0;
+    function showSlide(index) {
+      activeSlide = (index + slides.length) % slides.length;
+      slides.forEach((slide, i) => slide.classList.toggle("active", i === activeSlide));
+      dots.forEach((dot, i) => dot.classList.toggle("active", i === activeSlide));
+    }
+    dots.forEach((dot, i) => dot.addEventListener("click", () => showSlide(i)));
+    document.querySelectorAll(".hero-control").forEach((button) => {
+      button.addEventListener("click", () => showSlide(activeSlide + Number(button.dataset.direction)));
+    });
+    setInterval(() => showSlide(activeSlide + 1), 5000);
+  </script>
+</body>
+</html>
